@@ -8,7 +8,7 @@ def create_deck():
     
     for suit in suits:
         for rank in ranks:
-            deck.append((suit,rank))
+            deck.append([suit,rank])
             
     return deck
 
