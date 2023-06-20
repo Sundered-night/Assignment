@@ -15,8 +15,8 @@ def create_deck():
 def final_winner(card1, card2):
     ranks = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"]
     
-    rank_one = card1.split()[0]
-    rank_two = card2.split()[0]
+    rank_one = card1[1]
+    rank_two = card2[1]
     
     if ranks.index(rank_one) > ranks.index(rank_two):
         return "Player One"
@@ -43,5 +43,7 @@ def main():
         input("Press enter to play again\n")
         
     print("Deck empty. Goodbye")
+    
 
 main()
+
